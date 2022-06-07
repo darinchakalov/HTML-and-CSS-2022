@@ -1,0 +1,15 @@
+.main-list {
+	list-style-type: upper-roman;
+}
+
+.first-nested {
+	list-style-type: lower-alpha;
+}
+
+.second-nested {
+	list-style-type: circle;
+}
+
+.third-nested {
+	list-style-type: disc;
+}
