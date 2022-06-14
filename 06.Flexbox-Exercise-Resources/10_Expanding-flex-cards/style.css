@@ -15,6 +15,7 @@ body {
 }
 
 .img-wrapper {
+	box-shadow: 1px 1px 20px grey;
 	border-radius: 5px;
 	width: 10vw;
 	height: 40vh;
