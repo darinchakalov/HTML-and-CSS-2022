@@ -1,0 +1,37 @@
+.page {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+.first-image {
+	float: right;
+}
+
+main {
+	width: 60%;
+}
+
+img {
+	background-color: rgb(255, 255, 255);
+	border: 3px solid black;
+	padding: 4px;
+}
+
+.second-image {
+	float: left;
+}
+
+h1,
+h2,
+h3,
+blockquote {
+	font-family: Georgia, serif;
+}
+
+a {
+	color: rgb(0, 153, 0);
+}
