@@ -1,0 +1,31 @@
+.gallery {
+	max-width: 90vw;
+}
+
+body ul li {
+	display: flex;
+	border: 6px solid black;
+	padding: 20px 10px;
+	height: 400px;
+	width: 300px;
+}
+
+body ul li img {
+	max-width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body {
+    display: flex;
+}
+
+
+body ul {
+	display: flex;
+	justify-content: space-between;
+	gap: 40px;
+	list-style: none;
+	align-items: center;
+	flex-wrap: wrap;
+}
