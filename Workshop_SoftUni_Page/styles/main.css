@@ -1,3 +1,43 @@
 @import url("./components.css");
 @import url("./reset.css");
 @import url("./typography.css");
+
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	padding: 10px;
+	box-shadow: 1px 1px 10px grey;
+}
+
+header .wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav {
+	display: flex;
+	gap: 10px;
+}
+
+header nav ul {
+	display: flex;
+	gap: 10px;
+}
+
+header a {
+	text-decoration: none;
+	color: black;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.login {
+	background-color: rgb(155, 93, 198);
+    padding: 3px 20px;
+    color: white;
+    border-radius: 10px;
+}
