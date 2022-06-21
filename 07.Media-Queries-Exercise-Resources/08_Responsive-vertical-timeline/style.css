@@ -1,0 +1,97 @@
+h3 {
+	font-style: italic;
+}
+
+h4 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-color: white;
+    border: 1px solid rgb(153, 153, 153);
+    width: 300px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 3px 10px;
+    border-radius: 3px;
+}
+
+.timeline {
+	border: 0.3rem solid rgb(153, 153, 153);
+	position: relative;
+	max-width: 1200px;
+}
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 6px;
+	background-color: rgb(153, 153, 153);
+	top: 30px;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+.container {
+	padding: 10px 20px;
+	position: relative;
+	width: 50%;
+}
+
+.container::after {
+	content: "";
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background-color: orange;
+	border: 3px solid rgb(153, 153, 153);
+	border-radius: 50%;
+	right: 25px;
+	top: 45px;
+	z-index: 1;
+}
+
+.left {
+	left: 0;
+    text-align: right;
+}
+
+.right {
+    left: 50%;
+}
+
+.right::after{
+    left: -16px;
+    background-color: green;
+}
+
+.content {
+    width: 80%;
+    padding: 20px 30px;
+    position: relative;
+}
+
+@media screen and (max-width: 600px) {
+    .timeline::after {
+        left: 31px;
+    }
+
+    .container {
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .left::after, .right::after {
+        left: 15px;
+    }
+
+    .right {
+        left: 0;
+        
+    }
+
+    .left {
+        text-align: left;
+    }
+}
