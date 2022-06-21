@@ -1,43 +1,50 @@
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+
 @import url("./components.css");
 @import url("./reset.css");
 @import url("./typography.css");
+@import url("./header.css");
 
 .wrapper {
 	width: 90%;
 	margin: auto;
 }
 
-header {
-	padding: 10px;
-	box-shadow: 1px 1px 10px grey;
+.italic {
+	font-style: italic;
+	font-size: 10px;
 }
 
-header .wrapper {
+.main-paragraph {
+	font-weight: 500;
+	margin: 1rem 0;
+}
+
+.container {
+	margin: 3rem 0;
+}
+
+.diplomas {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	gap: 2rem;
+	position: relative;
 }
 
-header nav {
-	display: flex;
-	gap: 10px;
+.circle-background {
+	background-color: rgb(84, 84, 110);
+	position: absolute;
+	width: 500px;
+	height: 500px;
+	border-radius: 50%;
+	z-index: -1;
+	top: -250px;
+	right: -10vw;
 }
 
-header nav ul {
-	display: flex;
-	gap: 10px;
-}
-
-header a {
-	text-decoration: none;
-	color: black;
-    font-size: 12px;
-    font-weight: 600;
-}
-
-.login {
-	background-color: rgb(155, 93, 198);
-    padding: 3px 20px;
-    color: white;
-    border-radius: 10px;
+.circle-background i {
+	color: rgb(97, 97, 121);
+    font-size: 150px;
+    position: relative;
+    left: 55%;
+    top: 55%;
 }
