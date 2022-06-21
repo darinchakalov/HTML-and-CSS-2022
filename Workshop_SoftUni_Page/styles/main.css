@@ -43,8 +43,56 @@
 
 .circle-background i {
 	color: rgb(97, 97, 121);
-    font-size: 150px;
-    position: relative;
-    left: 55%;
-    top: 55%;
+	font-size: 150px;
+	position: relative;
+	left: 55%;
+	top: 55%;
 }
+
+.certificates {
+	background-color: rgb(20, 22, 43);
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+
+section {
+	padding: 2rem 3rem;
+}
+
+.certificates {
+	color: white;
+	position: relative;
+}
+
+.certificates-img img {
+	position: relative;
+	top: 70px;
+}
+
+.carreer {
+	display: flex;
+	gap: 3rem;
+	align-items: center;
+}
+
+.carreer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1em;
+}
+
+.email-btn {
+	color: rgb(155, 93, 198);
+	text-decoration: none;
+	margin: 1rem;
+	border: 1px solid rgb(155, 93, 198);
+	border-radius: 15px;
+	width: 200px;
+	text-align: center;
+	padding: 5px 10px;
+	font-weight: 700;
+}
+
+
