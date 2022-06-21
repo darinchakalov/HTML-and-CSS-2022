@@ -1,0 +1,64 @@
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+
+form {
+	width: 300px;
+    margin: 50px;
+}
+
+fieldset {
+    width: 100%;
+    box-shadow: 1px 1px 15px grey;
+    background-color: rgb(248,248,248);
+    border: none;
+    position: relative;
+}
+
+legend {
+    position: relative;
+    left: -11px;
+    box-shadow: 1px 1px 15px grey;
+    padding: 5px 80px 5px 5px;
+    background-color: rgb(248,248,248)
+
+}
+
+p {
+	width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+label {
+    flex-basis: 20%;
+}
+
+input {
+    position: relative;
+    width: 100%;
+}
+
+i {
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    font-size: 12px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 2px 10px;
+}
+
+@media (max-width: 500px) {
+    p {
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+
+    button {
+        margin: 20px;
+    }
+}

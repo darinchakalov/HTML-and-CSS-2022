@@ -1,0 +1,47 @@
+html {
+	font-family: Helvetica, sans-serif;
+}
+
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+.card {
+	background-color: rgb(255, 255, 255);
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 20px grey;
+    margin: 50px;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+}
+
+.card .media {
+    height: 250px;
+}
+
+.card .info {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+button {
+	background-color: rgb(0, 153, 0);
+    width: 25%;
+    align-self: flex-end;
+    border: none;
+    color: white;
+    padding: 5px 20px;
+}
+
+h3 {
+	font-family: Georgia, serif;
+	font-size: 1em/1.2;
+}
