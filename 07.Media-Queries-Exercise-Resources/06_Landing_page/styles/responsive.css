@@ -1,0 +1,21 @@
+@media (max-width: 790px) {
+	#navbar {
+		display: none;
+	}
+
+	#mobile-navbar {
+		display: block !important;
+	}
+
+	#mobile-navbar button {
+		border: none;
+		background-color: transparent;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 700px) {
+	.out-team {
+		grid-template-columns: repeat(2, 1fr) !important;
+	}
+}

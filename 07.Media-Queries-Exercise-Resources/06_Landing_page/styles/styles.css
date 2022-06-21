@@ -1,0 +1,118 @@
+@import url("./reset.css");
+@import url("./typography.css");
+@import url('./responsive.css');
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+
+/* Nav flex */
+header {
+	padding: 1rem 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	margin: auto;
+}
+
+header ul {
+	display: flex;
+	gap: 12px;
+}
+
+header h1 {
+	color: rgb(104, 52, 124);
+	font-weight: 600;
+	text-shadow: 1px 1px 3px;
+}
+
+header p {
+	font-size: 14px;
+}
+
+#mobile-navbar {
+  display: none;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.hidden-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(224, 224, 224);
+  padding: 1rem;
+  position: absolute;
+}
+
+.hidden-menu a{
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.need-a-website {
+	width: 70%;
+	margin: auto;
+	display: flex;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+
+.need-info {
+	flex-basis: 70%;
+}
+
+.need-info * {
+	margin-bottom: 1rem;
+}
+
+.need-info p {
+	text-align: justify;
+	width: 90%;
+}
+
+.need-info button {
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: white;
+	color: black;
+	padding: 5px 20px;
+}
+
+.need-img i {
+	font-size: 8rem;
+}
+
+.out-team {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 80%;
+  margin: auto;
+}
+
+.team-member {
+	display: flex;
+	flex-direction: column;
+  /* width: 200px; */
+  align-items: center;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+#our-team {
+  text-align: center;
+  
+}
+
+#our-team::after{
+  
+  border-bottom: 3px solid black;
+}
