@@ -1,0 +1,77 @@
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+.page {
+	display: flex;
+	flex-direction: column;
+	width: 80%;
+	margin: auto;
+}
+
+.first-image {
+	float: right;
+}
+
+main {
+	/* width: 60%; */
+}
+
+img {
+	background-color: rgb(255, 255, 255);
+	border: 3px solid black;
+	padding: 4px;
+	max-width: 120px;
+}
+
+.second-image {
+	float: left;
+	margin: 0 1rem 1rem 0;
+}
+
+h1,
+h2,
+h3,
+blockquote {
+	font-family: Georgia, serif;
+}
+
+a {
+	color: rgb(0, 153, 0);
+}
+
+header {
+	border-bottom: 2px solid black;
+}
+
+@media (max-width: 500px) {
+	body {
+		font-size: 12px;
+	}
+}
+
+@media (min-width: 500px) and (max-width: 600px) {
+	body {
+		font-size: 14px;
+	}
+}
+@media (min-width: 600px) and (max-width: 800px) {
+	body {
+		font-size: 16px;
+	}
+}
+@media (min-width: 800px) and (max-width: 1300px) {
+	body {
+		font-size: 18px;
+	}
+}
+@media (min-width: 1300px) and (max-width: 1800px) {
+	body {
+		font-size: 21px;
+	}
+}
+@media (min-width: 1800px) {
+	body {
+		font-size: 23px;
+	}
+}
