@@ -1,0 +1,67 @@
+@import url("./reset.css");
+
+body {
+	background-color: rgb(238, 238, 238);
+}
+
+table {
+	width: 90%;
+	margin: 50px auto;
+	/* border-collapse: collapse; */
+}
+
+thead {
+	background-color: black;
+	color: white;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+th,
+td {
+	text-align: left;
+	padding: 16px;
+	border: 1px solid rgb(177, 176, 176);
+}
+
+th {
+	background-color: black;
+	color: white;
+}
+
+tr:nth-child(even) {
+	background-color: lightgray;
+}
+tr:nth-child(odd) {
+	background-color: white;
+}
+
+#small {
+	display: none;
+}
+
+@media (max-width: 600px) {
+	#large {
+		display: none;
+	}
+
+	#small {
+		display: table;
+		width: 100%;
+	}
+
+	th {
+		background-color: inherit;
+		color: black;
+		font-weight: 600;
+	}
+
+	#small tr:nth-child(-n + 3) {
+		background-color: lightgray;
+	}
+
+    #small tr:nth-child(n + 4) {
+		background-color: white;
+	}
+
+}
