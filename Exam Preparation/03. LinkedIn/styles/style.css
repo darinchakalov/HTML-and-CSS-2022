@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url(./reset.css);
+
+:root {
+	--main-blue: rgb(10, 102, 194);
+}
+
+html {
+	font-family: "Lato", sans-serif;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 90%;
+	margin: auto;
+}
+
+.logo img {
+	width: 150px;
+}
+
+nav a {
+	text-decoration: none;
+	margin-right: 1rem;
+}
+
+#join-now {
+	color: grey;
+}
+
+#sign-in {
+	color: var(--main-blue);
+	border: 1px solid var(--main-blue);
+	border-radius: 15px;
+	padding: 5px 20px;
+	font-weight: 600;
+}
+
+.welcome {
+	display: flex;
+	margin-left: 60px;
+	margin-bottom: 87px;
+}
+
+.welcome h1 {
+	color: var(--main-blue);
+	font-size: 38px;
+}
+
+.welcome-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.welcome-form,
+.welcome-img {
+	flex-basis: 50%;
+}
+
+.welcome-img {
+	position: relative;
+}
+
+.welcome-img img {
+	width: 450px;
+	position: absolute;
+	top: -20px;
+}
+
+form input {
+	display: block;
+	margin: 10px 0;
+	height: 30px;
+	width: 250px;
+}
+
+#forgot-pass {
+	color: rgb(118, 118, 118);
+	margin-bottom: 20px;
+	font-size: 13px;
+}
+
+#welcome-sign-in {
+	color: white;
+	background-color: var(--main-blue);
+	margin-top: 30px;
+	padding: 10px 0;
+	width: 250px;
+	border-radius: 15px;
+	text-align: center;
+	text-decoration: none;
+}
+
+.intenship {
+	background-color: rgb(247, 247, 247);
+	padding: 80px 40px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.intenship h2 {
+	font-size: 32px;
+	text-align: justify;
+	width: 220px;
+}
+
+.suggested-search {
+	flex-basis: 45%;
+}
+
+.suggested-search h4 {
+	font-size: 14px;
+	color: rgb(107, 106, 106);
+	font-weight: 600;
+}
+
+.suggested-search a {
+	background-color: rgb(197, 197, 197);
+	padding: 10px;
+	margin: 5px;
+	border-radius: 18px;
+	text-decoration: none;
+	color: rgb(66, 58, 58);
+	font-weight: 600;
+}
+
+.suggested-search div {
+	display: flex;
+	flex-wrap: wrap;
+}
