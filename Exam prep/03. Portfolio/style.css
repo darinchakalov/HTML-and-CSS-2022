@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+
+:root {
+	--background-color: rgb(239, 239, 239);
+	--social-icons-color: rgb(144, 144, 144);
+}
+
+/* General */
+
+body {
+	font-family: "Raleway", sans-serif;
+	width: 100vw;
+}
+
+section {
+	background-color: var(--background-color);
+	margin: 20px;
+	padding: 20px;
+	height: 700px;
+	max-height: 700px;
+}
+
+header {
+	text-align: right;
+	display: flex;
+	justify-content: flex-end;
+	gap: 1rem;
+}
+
+header a {
+	font-size: 13px;
+	text-decoration: none;
+	color: black;
+}
+
+/* Hero section */
+
+.wrapper {
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+}
+
+.hero-info {
+	width: 50%;
+	padding: 100px;
+	margin: 3em;
+}
+
+.section-heading {
+	font-size: 3rem;
+	font-weight: 100;
+}
+
+.section-heading span {
+	font-weight: 900;
+}
+
+.hero-info p {
+	max-width: 70%;
+	font-style: italic;
+}
+
+.hero-img {
+	position: relative;
+}
+
+.hero-img img {
+	position: relative;
+	bottom: -80px;
+	max-height: 90%;
+}
+
+.hero-info::after {
+	content: "";
+	height: 100px;
+	border-left: 1px solid black;
+	position: absolute;
+}
+
+/* Camera section */
+
+.camera {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 6rem;
+}
+
+.camera-info {
+	width: 40%;
+}
+
+.camera-info p {
+	font-style: italic;
+	line-height: 2;
+	font-weight: 600;
+}
+
+.social-icons {
+	display: flex;
+	gap: 20px;
+}
+
+.social-icons i {
+	color: var(--social-icons-color);
+	font-size: 40px;
+}
+
+/* Girl fotographer section */
+
+.girl-fotographer {
+	/* box-sizing: content-box; */
+	padding: 0;
+}
+
+.girl-fotographer img {
+	width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	max-width: 100%;
+}
+
+.left, .right {
+	width: 500px;
+	top: 15%;
+	z-index: 0;
+}
+
+.gallery {
+}
+
+.gallery img {
+	position: relative;
+}
+
+.middle {
+	width: 600px;
+	top: 20%;
+	transform: translate(0 -50%);
+	z-index: 1;
+}
+
+.left {
+	left: 10%;
+}
+
+.right {
+	right: 10%;
+}
