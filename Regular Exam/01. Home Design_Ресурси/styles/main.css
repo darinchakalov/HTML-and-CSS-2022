@@ -1,0 +1,105 @@
+@import url(./reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+
+:root {
+	--page-red: rgb(203, 32, 39);
+	--page-background: rgb(245, 245, 245);
+}
+
+body {
+	font-family: "Courgette", cursive;
+    background-color: var(--page-background);
+}
+
+/* HEADER */
+
+header {
+	text-align: center;
+	margin: 2rem 0;
+	overflow: hidden;
+}
+
+header h1 {
+	font-size: 4rem;
+}
+
+header h2 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: var(--page-red);
+	position: relative;
+	right: -130px;
+	margin-top: 20px;
+}
+
+/* GRID SECTION */
+
+.container {
+	display: flex;
+	width: 80%;
+	gap: 30px;
+    margin: 4rem auto;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-basis: 35%;
+    flex-direction: column;
+    background-color: white;
+	border-radius: 15px;
+    min-height: 600px;
+    max-height: 600px;
+}
+
+.card {
+    flex-basis: 50%;
+}
+
+.card-img img {
+    width: 100%;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-info {
+    height: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-info h2 {
+    font-size: 2rem;
+    border-bottom: 2px solid var(--page-red);
+    width: 80%;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.card-info p {
+    text-align: center;
+    padding: 0 1.5rem;
+    font-size: 20px;
+    position: relative;
+    top: -1.5rem;
+}
+
+.card-info button {
+    justify-self: flex-end;
+    font-size: 20px;    
+	font-family: "Courgette", cursive;
+    border: none;
+    background: unset;
+    margin-bottom: 1.5rem;
+}
+
+.card-info button i {
+    color: var(--page-red);
+}
