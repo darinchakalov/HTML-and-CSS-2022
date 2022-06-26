@@ -1,0 +1,84 @@
+@media screen and (max-width: 600px) {
+	body {
+		margin: 0;
+	}
+	main {
+		width: 100%;
+	}
+
+	.left-to-right:first-child {
+		height: 515px;
+	}
+
+	main .left-to-right article {
+		display: flex;
+		display: block;
+		flex-direction: column;
+		width: 90%;
+		margin: auto;
+		/* height: 70%; */
+		padding: 20px 30px;
+		border-radius: 20%;
+	}
+
+	body > main > section:nth-child(1) > article > p {
+		font-size: 18px;
+	}
+
+	article {
+		overflow: hidden;
+	}
+
+	body > main > section:nth-child(1) > article > button {
+		display: none;
+	}
+
+	main section:nth-child(2),
+	main section:nth-child(4) {
+		display: unset;
+	}
+
+	body > main > section:nth-child(2) > article:nth-child(1) > header > h1 {
+		font-size: 2rem;
+	}
+
+	body > main > section:nth-child(2) > article:nth-child(1) > button {
+		display: none;
+	}
+
+	body > main > section:nth-child(3) > article {
+		display: flex;
+	}
+
+	body > main > section:nth-child(3) > article > button {
+		display: none;
+	}
+
+	body > main > section:nth-child(3) > article > header > h1 {
+		font-size: 2.5rem;
+	}
+
+	body > main > section:nth-child(3) > article > button {
+		font-size: 18px;
+	}
+
+	body > main > section:nth-child(4) > article:nth-child(1) {
+		display: flex;
+		justify-content: center;
+	}
+
+	form {
+		width: 90%;
+		margin: auto;
+	}
+
+	section form label input,
+	section form textarea {
+		width: 90%;
+        padding-top: 15px;
+	}
+
+	section form label {
+		display: flex;
+	}
+}
