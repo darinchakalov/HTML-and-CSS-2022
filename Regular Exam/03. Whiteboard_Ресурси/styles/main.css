@@ -1,0 +1,218 @@
+@import url(./reset.css);
+@import "https://use.fontawesome.com/releases/v6.1.1/css/all.css";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+
+:root {
+	--dark-green: rgb(0, 208, 142);
+	--light-green: rgb(178, 241, 221);
+}
+
+body {
+	font-family: "PT Sans", sans-serif;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+/* HEADER SECTION */
+
+.header {
+	background: linear-gradient(to top, rgba(255, 255, 255, 0) 20%, rgba(0, 0, 0, 0.486)),
+		url(../image/computer-main.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	min-height: 750px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.header header {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 10%;
+	font-size: 25px;
+}
+
+.header a {
+	color: white;
+	text-decoration: none;
+}
+
+.header h1 {
+	font-size: 4rem;
+	font-weight: 900;
+	margin: 80px 0 60px 0;
+
+	text-shadow: 1px 1px 2px black;
+}
+
+.header p {
+	font-size: 25px;
+	width: 32%;
+	line-height: 1.5;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+}
+
+.header button {
+	margin: 100px 0;
+	color: white;
+	font-size: 23px;
+	font-weight: 700;
+	background-color: var(--dark-green);
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	border: 4px solid var(--dark-green);
+}
+
+.header button:hover {
+	background-color: transparent;
+	border: 4px solid white;
+}
+
+.header a {
+	font-size: 24px;
+	text-shadow: 1px 1px 2px black;
+}
+
+/* GRID SECTION */
+
+.grid {
+	display: grid;
+	grid-template-areas:
+		"tablet list"
+		"cardGrid pen";
+}
+
+.card {
+	width: 863px;
+	min-height: 300px;
+	object-fit: cover;
+}
+
+.card img {
+	object-fit: contain;
+	width: 100%;
+}
+
+.card h2 {
+	font-size: 50px;
+	font-weight: 900;
+}
+
+.tablet {
+	grid-area: tablet;
+}
+
+.list {
+	grid-area: list;
+	padding: 40px 80px;
+}
+
+.list h2 {
+	margin-bottom: 20px;
+}
+
+.list p {
+	font-size: 29px;
+	width: 75%;
+	font-weight: 500;
+	margin-bottom: 40px;
+}
+
+.list li {
+	font-size: 25px;
+	margin-bottom: 40px;
+}
+
+.list li span {
+	color: var(--dark-green);
+	margin-right: 30px;
+}
+
+.card-grid {
+	grid-area: cardGrid;
+}
+
+.card-grid h2 {
+	text-align: center;
+	margin: 30px 0;
+}
+
+.card-grid-wrapper {
+	display: grid;
+	padding: 30px 40px 0 40px;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 30px;
+	justify-content: center;
+	text-align: center;
+}
+
+.icon img {
+	width: 100px;
+}
+
+.icon {
+	margin-bottom: 30px;
+}
+
+.icon h4 {
+	color: var(--dark-green);
+	font-size: 30px;
+	font-weight: 900;
+	margin: 20px;
+}
+
+.pen {
+	grid-area: pen;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+	background-color: var(--light-green);
+	padding: 30px;
+}
+
+.footer h1 {
+	text-align: center;
+	font-size: 50px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+.questions-wrapper {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+}
+
+.question-card {
+	text-align: center;
+	padding: 30px;
+	max-width: 370px;
+	margin: auto;
+}
+
+.question-card h3 {
+	font-size: 26px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+.footer p {
+	text-align: center;
+}
+
+.footer p span {
+	font-weight: 900;
+}
